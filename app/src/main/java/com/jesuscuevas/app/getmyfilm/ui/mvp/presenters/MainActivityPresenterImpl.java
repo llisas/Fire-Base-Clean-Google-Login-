@@ -103,5 +103,5 @@ public class MainActivityPresenterImpl implements MainActivityPresenter{
                     }
                 });
     }
-    
+
 }
