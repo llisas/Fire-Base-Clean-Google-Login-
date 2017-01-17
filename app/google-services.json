@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "526238052538",
+    "firebase_url": "https://loginfilms-a02d6.firebaseio.com",
+    "project_id": "loginfilms-a02d6",
+    "storage_bucket": "loginfilms-a02d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526238052538:android:572087f12aecd884",
+        "android_client_info": {
+          "package_name": "com.jesuscuevas.app.getmyfilm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526238052538-8qspikbmku2va79p8khh729p6q5smj3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jesuscuevas.app.getmyfilm",
+            "certificate_hash": "32F4FA90B3A1E23AA404330F370133EA23BFC4D9"
+          }
+        },
+        {
+          "client_id": "526238052538-qbqaf0nhpf4htpp6logmln2qq0cqo5r0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdAh0B1teIBF8AK4oG-zJqcBQvSr2vps8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526238052538-qbqaf0nhpf4htpp6logmln2qq0cqo5r0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
