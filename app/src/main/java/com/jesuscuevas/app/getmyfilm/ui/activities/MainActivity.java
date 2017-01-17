@@ -102,7 +102,7 @@ public class MainActivity extends BaseActivity implements
         mPresenter.onActivityResult(requestCode, data);
     }
 
-    
+
     //[PRESENTER METHODS]
     @Override
     public void showDialogProgress() {
