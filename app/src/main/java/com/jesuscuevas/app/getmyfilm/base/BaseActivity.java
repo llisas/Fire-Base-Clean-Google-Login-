@@ -2,9 +2,6 @@ package com.jesuscuevas.app.getmyfilm.base;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-
-import com.jesuscuevas.app.getmyfilm.R;
-
 import butterknife.ButterKnife;
 
 

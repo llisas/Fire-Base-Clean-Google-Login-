@@ -25,7 +25,6 @@ public class MainActivity extends BaseActivity implements
     private FirebaseAuth.AuthStateListener mAuthListener;
     private MainActivityPresenter mPresenter;
 
-
     @Override
     protected void getPresenter() {
         mPresenter = new MainActivityPresenterImpl(this, this, this);
@@ -58,7 +57,6 @@ public class MainActivity extends BaseActivity implements
         }
     }
 
-
     private void configureGoogleSign() {
         mPresenter.configureGoogleSign(this, this);
     }
@@ -70,7 +68,6 @@ public class MainActivity extends BaseActivity implements
     private void startAuthStateListener() {
         mPresenter.startAuthStateListener();
     }
-
 
     @OnClick(R.id.sign_in_button)
     void onSignInClick() {
@@ -87,7 +84,6 @@ public class MainActivity extends BaseActivity implements
         super.onActivityResult(requestCode, resultCode, data);
         mPresenter.onActivityResult(requestCode, data);
     }
-
 
     //[PRESENTER METHODS]
     @Override

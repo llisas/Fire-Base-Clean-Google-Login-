@@ -5,10 +5,8 @@ import com.jesuscuevas.app.getmyfilm.base.BaseActivity;
 
 public class HeadActivy extends BaseActivity {
 
-
     @Override
     protected void getPresenter() {
-
     }
 
     @Override

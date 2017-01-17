@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
-import android.widget.Toast;
-
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -21,7 +19,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.jesuscuevas.app.getmyfilm.R;
-import com.jesuscuevas.app.getmyfilm.ui.activities.MainActivity;
 import com.jesuscuevas.app.getmyfilm.ui.mvp.helper.LoginHelper;
 import com.jesuscuevas.app.getmyfilm.ui.mvp.views.MainActivityView;
 import com.jesuscuevas.app.getmyfilm.utils.Constans;
@@ -32,7 +29,6 @@ public class MainActivityPresenterImpl implements MainActivityPresenter{
     private MainActivityView mView;
     private LoginHelper mLoginHelper;
     private Context mContext;
-
 
     public MainActivityPresenterImpl(MainActivityView view,
                                      LoginHelper loginHelper,
@@ -85,7 +81,7 @@ public class MainActivityPresenterImpl implements MainActivityPresenter{
             if (result.isSuccess()) {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = result.getSignInAccount();
-                mLoginHelper.firebaseAuthWithGoogleHelper(account);
+                mLoginHelper.fireBaseAuthWithGoogleHelper(account);
             } else {
                mView.onGoogleSignError("An Error ");
             }
@@ -103,11 +99,9 @@ public class MainActivityPresenterImpl implements MainActivityPresenter{
                         mView.moveToNextActivity();
                         if (!task.isSuccessful()) {
                             Log.w(Constans.TAG, "LOGIN ERROR");
-                            mView.onGoogleSignError("ERROR LOGIN");
                         }
                     }
                 });
     }
-
-
+    
 }
